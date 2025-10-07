@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "cross-request",
+    "description": "GTest 跨域请求",
+    "version": "3.3",
+    "action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [ "proxy", "tabs", "storage", "webRequest" ],
+    "host_permissions": [ "*://*/*" ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "web_accessible_resources": [{
+        "resources": ["index.js"],
+        "matches": ["<all_urls>"]
+    }],
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": [
+            "response.js"
+        ],
+        "all_frames": true
+    }]
+}
