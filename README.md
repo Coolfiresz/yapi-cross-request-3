@@ -1,4 +1,4 @@
-# Cross-Request - YApi跨域请求Chrome扩展
+# Cross-Request - YApi跨域请求Chrome扩展3.0版本
 
 cross-request是一个赋予html页面跨域请求能力的Chrome扩展，专为配合YApi接口测试平台使用。
 
