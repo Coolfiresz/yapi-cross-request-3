@@ -442,7 +442,7 @@ function sendAjaxByBack(id, req, successFn, errorFn) {
     
     successFns[id] = successFn;
     errorFns[id] = errorFn;
-    console.log(req);
+    // console.log(req);
     
     // 包装发送消息的函数，添加错误处理
     function sendMessage(message) {
